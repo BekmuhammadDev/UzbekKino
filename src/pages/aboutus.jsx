@@ -97,14 +97,14 @@ const AboutUs = () => {
         </div>
       </section>
 
-      <section className=" px-10 pb-20 bg-white text-black">
+      <section className="  pb-20 bg-white text-black">
         <div className="container mx-auto">
           <div className=" flex items-center gap-10">
             <div className="w-2/2">
               <img src={PonoramaImg} alt="Film Strip" className="w-full" />
             </div>
 
-            <div className="pl-10 items-center">
+            <div className="items-center">
               <div className="ml-3">
                 <h1 className="font-bold text-5xl mb-8">“UZKINO” TARIXI</h1>
                 <p className="text-xl font-normal ">
@@ -198,6 +198,7 @@ const AboutUs = () => {
           </p>
         </div>
       </section>
+
       <section className="container mx-auto w-full h-[650px]">
         <h1 className="mont font-bold text-[48px] text-center mt-10">
           Onlayn kino

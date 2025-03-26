@@ -5,8 +5,8 @@ const header = () => {
     return (
 
         <>
-            <header className='bg-black fixed top-0 w-full h-[65px] z-20'>
-                <div className='container mx-auto'>
+            <header className=' bg-black fixed top-0 w-full h-[65px] z-20'>
+                <div className='container mx-auto px-10'>
                     <nav className='flex justify-between items-center py-[18px]'>
                         <h1 className='text-white text-3xl font-semibold'>LOGO</h1>
                         <ul className=' flex gap-[30px]'>
