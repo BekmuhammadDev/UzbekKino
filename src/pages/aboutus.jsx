@@ -3,7 +3,8 @@ import { motion } from "framer-motion";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import backgroundImage from "../assets/images/bgimg.png";
 import illusionbg from "../assets/illusionbg.svg";
-import PonoramaImg from "../assets/images/ponorama.png"
+import InfiniteSlider from "../components/infiniteSlider";
+import AnimatedButton from "../components/AnimatedBtn";
 
 const cards = [
   { id: 1, image: backgroundImage },
@@ -26,7 +27,6 @@ const AboutUs = () => {
 
   return (
     <main>
-
       <section
         className="relative bg-cover h-screen flex py-[170px] transition-all duration-700"
         style={{ backgroundImage: `url(${cards[activeIndex].image})` }}
@@ -92,57 +92,71 @@ const AboutUs = () => {
 
       <section className=" px-10 pb-20 bg-white text-black">
         <div className="container mx-auto">
-
           <div className=" flex items-center gap-10">
-
             <div className="w-2/2">
               <img src={PonoramaImg} alt="Film Strip" className="w-full" />
             </div>
 
             <div className="pl-10 items-center">
-
               <div className="ml-3">
                 <h1 className="font-bold text-5xl mb-8">“UZKINO” TARIXI</h1>
                 <p className="text-xl font-normal ">
-                  — Oʻzbekiston bosh kinoarxivi, Xalqaro kinoarxivlar federatsiyasi (FIAF) aʼzosi
+                  — Oʻzbekiston bosh kinoarxivi, Xalqaro kinoarxivlar
+                  federatsiyasi (FIAF) aʼzosi
                 </p>
               </div>
 
               <div className="grid grid-cols-3 gap-20 text-center text-xl pt-16 font-bold">
                 <div>
-                  <span className="text-blue-600 font-bold text-[40px]">710 856</span>
-                  <p className="text-gray-600 text-lg">Qogʻoz hujjatlar arxivi</p>
+                  <span className="text-blue-600 font-bold text-[40px]">
+                    710 856
+                  </span>
+                  <p className="text-gray-600 text-lg">
+                    Qogʻoz hujjatlar arxivi
+                  </p>
                 </div>
                 <div>
-                  <span className="text-blue-600 font-bold text-[40px]">1 250 000</span>
+                  <span className="text-blue-600 font-bold text-[40px]">
+                    1 250 000
+                  </span>
                   <p className="text-gray-600 text-lg">Milliy kino fondi</p>
                 </div>
                 <div>
-                  <span className="text-blue-600 font-bold text-[40px]">1 762 000</span>
+                  <span className="text-blue-600 font-bold text-[40px]">
+                    1 762 000
+                  </span>
                   <p className="text-gray-600 text-lg">Xorijiy filmlar fondi</p>
                 </div>
                 <div>
-                  <span className="text-blue-600 font-bold text-[40px]">1 762 000</span>
+                  <span className="text-blue-600 font-bold text-[40px]">
+                    1 762 000
+                  </span>
                   <p className="text-gray-600 text-lg">Xorijiy filmlar fondi</p>
                 </div>
                 <div>
-                  <span className="text-blue-600 font-bold text-[40px]">710 856</span>
-                  <p className="text-gray-600 text-lg">Qogʻoz hujjatlar arxivi</p>
+                  <span className="text-blue-600 font-bold text-[40px]">
+                    710 856
+                  </span>
+                  <p className="text-gray-600 text-lg">
+                    Qogʻoz hujjatlar arxivi
+                  </p>
                 </div>
                 <div>
-                  <span className="text-blue-600 font-bold text-[40px]">1 250 000</span>
+                  <span className="text-blue-600 font-bold text-[40px]">
+                    1 250 000
+                  </span>
                   <p className="text-gray-600 text-lg">Milliy kino fondi</p>
                 </div>
               </div>
-
             </div>
-
           </div>
 
           <div className="flex items-center justify-center mt-10">
             <div className="w-1/4 h-px bg-gray-400"></div>
             <p className="mx-4 text-xl text-gray-700 text-center font-bold max-w-2xl">
-              Gosfilmofond bugungi kunda O‘zbekiston kinosini rivojlantirish va ommalashtirishda muhim o‘rin tutadigan noyob ko‘p funksiyali majmuadir.
+              Gosfilmofond bugungi kunda O‘zbekiston kinosini rivojlantirish va
+              ommalashtirishda muhim o‘rin tutadigan noyob ko‘p funksiyali
+              majmuadir.
             </p>
             <div className="w-1/4 h-px bg-gray-400"></div>
           </div>
@@ -153,11 +167,10 @@ const AboutUs = () => {
             </button>
           </div>
         </div>
-
       </section>
 
       <section
-        className="container w-full h-[464px] px-10 flex flex-col items-center justify-center relative"
+        className="container w-full h-[464px] flex flex-col items-center justify-center relative px-10"
         style={{
           backgroundImage: `url(${illusionbg})`,
           backgroundSize: "cover",
@@ -177,6 +190,73 @@ const AboutUs = () => {
             asar.
           </p>
         </div>
+      </section>
+      <section className="w-full h-[650px]">
+        <h1 className="mont font-bold text-[48px] text-center mt-10">
+          Onlayn kino
+        </h1>
+        {/* 
+        <div className="flex gap-10">
+          <div className="flex-col gap-5">
+            <img src={museyimg} alt="" className="w-[250px] h-[200px]" />
+            <article>
+              <p className="mont font-bold text-[20px]">— Teatr </p>
+              <span className="mont text-[16px]">7 oy avval</span>
+            </article>
+          </div>
+          <div className="flex-col gap-5">
+            <img src={museyimg} alt="" className="w-[250px] h-[200px]" />
+            <article>
+              <p className="mont font-bold text-[20px]">— Teatr </p>
+              <span className="mont text-[16px]">7 oy avval</span>
+            </article>
+          </div>{" "}
+          <div className="flex-col gap-5">
+            <img src={museyimg} alt="" className="w-[250px] h-[200px]" />
+            <article>
+              <p className="mont font-bold text-[20px]">— Teatr </p>
+              <span className="mont text-[16px]">7 oy avval</span>
+            </article>
+          </div>{" "}
+          <div className="flex-col gap-5">
+            <img src={museyimg} alt="" className="w-[250px] h-[200px]" />
+            <article>
+              <p className="mont font-bold text-[20px]">— Teatr </p>
+              <span className="mont text-[16px]">7 oy avval</span>
+            </article>
+          </div>{" "}
+          <div className="flex-col gap-5">
+            <img src={museyimg} alt="" className="w-[250px] h-[200px]" />
+            <article>
+              <p className="mont font-bold text-[20px]">— Teatr </p>
+              <span className="mont text-[16px]">7 oy avval</span>
+            </article>
+          </div>{" "}
+          <div className="flex-col gap-5">
+            <img src={museyimg} alt="" className="w-[250px] h-[200px]" />
+            <article>
+              <p className="mont font-bold text-[20px]">— Teatr </p>
+              <span className="mont text-[16px]">7 oy avval</span>
+            </article>
+          </div>{" "}
+          <div className="flex-col gap-5">
+            <img src={museyimg} alt="" className="w-[250px] h-[200px]" />
+            <article>
+              <p className="mont font-bold text-[20px]">— Teatr </p>
+              <span className="mont text-[16px]">7 oy avval</span>
+            </article>
+          </div>{" "}
+          <div className="flex-col gap-5">
+            <img src={museyimg} alt="" className="w-[250px] h-[200px]" />
+            <article>
+              <p className="mont font-bold text-[20px]">— Teatr </p>
+              <span className="mont text-[16px]">7 oy avval</span>
+            </article>
+          </div>
+        </div> */}
+
+        <InfiniteSlider />
+        <AnimatedButton />
       </section>
     </main>
   );
