@@ -4,7 +4,6 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import backgroundImage from "../assets/images/bgimg.png";
 import illusionbg from "../assets/illusionbg.svg";
 import InfiniteSlider from "../components/infiniteSlider";
-import { NavLink } from "react-router-dom";
 import AnimatedButton from "../components/AnimatedBtn";
 
 const cards = [
@@ -27,7 +26,7 @@ const AboutUs = () => {
   return (
     <main>
       <section
-        className="relative bg-cover h-[835px] flex py-[170px] transition-all duration-700"
+        className="relative bg-cover h-screen flex py-[170px] transition-all duration-700"
         style={{ backgroundImage: `url(${cards[activeIndex].image})` }}
       >
         {/* Overlay */}
@@ -88,6 +87,86 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
+
+      <section className=" px-10 pb-20 bg-white text-black">
+        <div className="container mx-auto">
+          <div className=" flex items-center gap-10">
+            <div className="w-2/2">
+              <img src={PonoramaImg} alt="Film Strip" className="w-full" />
+            </div>
+
+            <div className="pl-10 items-center">
+              <div className="ml-3">
+                <h1 className="font-bold text-5xl mb-8">“UZKINO” TARIXI</h1>
+                <p className="text-xl font-normal ">
+                  — Oʻzbekiston bosh kinoarxivi, Xalqaro kinoarxivlar
+                  federatsiyasi (FIAF) aʼzosi
+                </p>
+              </div>
+
+              <div className="grid grid-cols-3 gap-20 text-center text-xl pt-16 font-bold">
+                <div>
+                  <span className="text-blue-600 font-bold text-[40px]">
+                    710 856
+                  </span>
+                  <p className="text-gray-600 text-lg">
+                    Qogʻoz hujjatlar arxivi
+                  </p>
+                </div>
+                <div>
+                  <span className="text-blue-600 font-bold text-[40px]">
+                    1 250 000
+                  </span>
+                  <p className="text-gray-600 text-lg">Milliy kino fondi</p>
+                </div>
+                <div>
+                  <span className="text-blue-600 font-bold text-[40px]">
+                    1 762 000
+                  </span>
+                  <p className="text-gray-600 text-lg">Xorijiy filmlar fondi</p>
+                </div>
+                <div>
+                  <span className="text-blue-600 font-bold text-[40px]">
+                    1 762 000
+                  </span>
+                  <p className="text-gray-600 text-lg">Xorijiy filmlar fondi</p>
+                </div>
+                <div>
+                  <span className="text-blue-600 font-bold text-[40px]">
+                    710 856
+                  </span>
+                  <p className="text-gray-600 text-lg">
+                    Qogʻoz hujjatlar arxivi
+                  </p>
+                </div>
+                <div>
+                  <span className="text-blue-600 font-bold text-[40px]">
+                    1 250 000
+                  </span>
+                  <p className="text-gray-600 text-lg">Milliy kino fondi</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex items-center justify-center mt-10">
+            <div className="w-1/4 h-px bg-gray-400"></div>
+            <p className="mx-4 text-xl text-gray-700 text-center font-bold max-w-2xl">
+              Gosfilmofond bugungi kunda O‘zbekiston kinosini rivojlantirish va
+              ommalashtirishda muhim o‘rin tutadigan noyob ko‘p funksiyali
+              majmuadir.
+            </p>
+            <div className="w-1/4 h-px bg-gray-400"></div>
+          </div>
+
+          <div className="text-center mt-6">
+            <button className="px-10 py-3 bg-black text-white text-xl font-medium rounded-lg hover:bg-blue-600 transition">
+              KO‘RISH
+            </button>
+          </div>
+        </div>
+      </section>
+
       <section
         className="container w-full h-[464px] flex flex-col items-center justify-center relative px-10"
         style={{
