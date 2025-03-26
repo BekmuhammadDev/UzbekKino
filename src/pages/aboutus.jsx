@@ -6,6 +6,7 @@ import illusionbg from "../assets/illusionbg.svg";
 import InfiniteSlider from "../components/infiniteSlider";
 import AnimatedButton from "../components/AnimatedBtn";
 import PonoramaImg from "../assets/images/ponorama.png";
+import Footer from "../components/Footer";
 
 const cards = [
   { id: 1, image: backgroundImage },
@@ -204,6 +205,7 @@ const AboutUs = () => {
         <InfiniteSlider />
         <AnimatedButton />
       </section>
+      <Footer />
     </main>
   );
 };
