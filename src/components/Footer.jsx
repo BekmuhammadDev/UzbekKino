@@ -3,6 +3,7 @@ import { RiTelegram2Fill } from "react-icons/ri";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { BsYoutube } from "react-icons/bs";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -20,9 +21,12 @@ const Footer = () => {
           </p>
         </article>
         <article className="flex-col">
-          <h1 className="mont font-bold text-[24px] leading-6 text-start">
+          <NavLink
+            to={"services"}
+            className="mont font-bold text-[24px] leading-6 text-start"
+          >
             Xizmat
-          </h1>
+          </NavLink>
           <p className="mont font-normal text-[20px] leading-4 my-3">
             Laboratoriya
           </p>
@@ -31,9 +35,12 @@ const Footer = () => {
           </p>
         </article>
         <article className="flex-col">
-          <h1 className="mont font-bold text-[24px] leading-6 text-start">
+          <NavLink
+            to={"/"}
+            className="mont font-bold text-[24px] leading-6 text-start"
+          >
             Biz haqimizda
-          </h1>
+          </NavLink>
           <p className="mont font-normal text-[20px] leading-4 my-3">
             Bizning faoliyatimiz
           </p>
@@ -51,7 +58,7 @@ const Footer = () => {
           </div>
         </article>
       </div>
-      <h1 className="text-center text-white relative top-0">
+      <h1 className="mont text-[20px] leading-8 text-center text-white relative top-0">
         2025 @iPro Design
       </h1>
     </div>
