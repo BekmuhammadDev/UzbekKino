@@ -22,6 +22,8 @@ const AboutUs = () => {
     setActiveIndex((prev) => (prev - 1 + cards.length) % cards.length);
   };
 
+  // ////////////////////////
+
   return (
     <main>
 
