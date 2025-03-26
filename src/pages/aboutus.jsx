@@ -3,6 +3,9 @@ import { motion } from "framer-motion";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import backgroundImage from "../assets/images/bgimg.png";
 import illusionbg from "../assets/illusionbg.svg";
+import InfiniteSlider from "../components/infiniteSlider";
+import { NavLink } from "react-router-dom";
+import AnimatedButton from "../components/AnimatedBtn";
 
 const cards = [
   { id: 1, image: backgroundImage },
@@ -86,7 +89,7 @@ const AboutUs = () => {
         </div>
       </section>
       <section
-        className="container w-full h-[464px] px-10 flex flex-col items-center justify-center relative"
+        className="container w-full h-[464px] flex flex-col items-center justify-center relative px-10"
         style={{
           backgroundImage: `url(${illusionbg})`,
           backgroundSize: "cover",
@@ -106,6 +109,73 @@ const AboutUs = () => {
             asar.
           </p>
         </div>
+      </section>
+      <section className="w-full h-[650px]">
+        <h1 className="mont font-bold text-[48px] text-center mt-10">
+          Onlayn kino
+        </h1>
+        {/* 
+        <div className="flex gap-10">
+          <div className="flex-col gap-5">
+            <img src={museyimg} alt="" className="w-[250px] h-[200px]" />
+            <article>
+              <p className="mont font-bold text-[20px]">— Teatr </p>
+              <span className="mont text-[16px]">7 oy avval</span>
+            </article>
+          </div>
+          <div className="flex-col gap-5">
+            <img src={museyimg} alt="" className="w-[250px] h-[200px]" />
+            <article>
+              <p className="mont font-bold text-[20px]">— Teatr </p>
+              <span className="mont text-[16px]">7 oy avval</span>
+            </article>
+          </div>{" "}
+          <div className="flex-col gap-5">
+            <img src={museyimg} alt="" className="w-[250px] h-[200px]" />
+            <article>
+              <p className="mont font-bold text-[20px]">— Teatr </p>
+              <span className="mont text-[16px]">7 oy avval</span>
+            </article>
+          </div>{" "}
+          <div className="flex-col gap-5">
+            <img src={museyimg} alt="" className="w-[250px] h-[200px]" />
+            <article>
+              <p className="mont font-bold text-[20px]">— Teatr </p>
+              <span className="mont text-[16px]">7 oy avval</span>
+            </article>
+          </div>{" "}
+          <div className="flex-col gap-5">
+            <img src={museyimg} alt="" className="w-[250px] h-[200px]" />
+            <article>
+              <p className="mont font-bold text-[20px]">— Teatr </p>
+              <span className="mont text-[16px]">7 oy avval</span>
+            </article>
+          </div>{" "}
+          <div className="flex-col gap-5">
+            <img src={museyimg} alt="" className="w-[250px] h-[200px]" />
+            <article>
+              <p className="mont font-bold text-[20px]">— Teatr </p>
+              <span className="mont text-[16px]">7 oy avval</span>
+            </article>
+          </div>{" "}
+          <div className="flex-col gap-5">
+            <img src={museyimg} alt="" className="w-[250px] h-[200px]" />
+            <article>
+              <p className="mont font-bold text-[20px]">— Teatr </p>
+              <span className="mont text-[16px]">7 oy avval</span>
+            </article>
+          </div>{" "}
+          <div className="flex-col gap-5">
+            <img src={museyimg} alt="" className="w-[250px] h-[200px]" />
+            <article>
+              <p className="mont font-bold text-[20px]">— Teatr </p>
+              <span className="mont text-[16px]">7 oy avval</span>
+            </article>
+          </div>
+        </div> */}
+
+        <InfiniteSlider />
+        <AnimatedButton />
       </section>
     </main>
   );
