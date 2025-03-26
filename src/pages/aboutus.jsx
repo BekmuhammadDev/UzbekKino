@@ -21,6 +21,7 @@ const AboutUs = () => {
   };
 
   return (
+
     <section
       className="relative bg-cover h-[835px] flex py-[170px] transition-all duration-700"
       style={{ backgroundImage: `url(${cards[activeIndex].image})` }}
@@ -85,6 +86,10 @@ const AboutUs = () => {
         </div>
       </div>
     </section>
+
+    
+    
+    
   );
 };
 
