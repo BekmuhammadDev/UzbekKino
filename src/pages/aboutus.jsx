@@ -109,6 +109,7 @@ const AboutUs = () => {
       </section>
       <section className="w-full h-[850px]">
         <h1 className="mont font-bold text-[48px]">Onlayn kino</h1>
+        <p>hellow root</p>
       </section>
     </main>
   );
