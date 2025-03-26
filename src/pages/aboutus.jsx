@@ -5,6 +5,7 @@ import backgroundImage from "../assets/images/bgimg.png";
 import illusionbg from "../assets/illusionbg.svg";
 import InfiniteSlider from "../components/infiniteSlider";
 import AnimatedButton from "../components/AnimatedBtn";
+import PonoramaImg from "../assets/images/ponorama.png"
 
 const cards = [
   { id: 1, image: backgroundImage },
