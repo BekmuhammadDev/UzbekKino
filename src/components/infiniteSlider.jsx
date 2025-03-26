@@ -16,7 +16,7 @@ const cards = [
 
 const InfiniteSlider = () => {
   return (
-    <div className="overflow-hidden w-full mt-24">
+    <div className="container mx-auto overflow-hidden w-full mt-24">
       <motion.div
         className="flex gap-10"
         animate={{ x: ["0%", "-80%"] }}

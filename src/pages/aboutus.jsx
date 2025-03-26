@@ -5,6 +5,7 @@ import backgroundImage from "../assets/images/bgimg.png";
 import illusionbg from "../assets/illusionbg.svg";
 import InfiniteSlider from "../components/infiniteSlider";
 import AnimatedButton from "../components/AnimatedBtn";
+import PonoramaImg from "../assets/images/ponorama.png";
 
 const cards = [
   { id: 1, image: backgroundImage },
@@ -24,10 +25,15 @@ const AboutUs = () => {
   };
 
   return (
-    <main>
+    <main className="overflow-hidden">
       <section
-        className="relative bg-cover h-screen flex py-[170px] transition-all duration-700"
-        style={{ backgroundImage: `url(${cards[activeIndex].image})` }}
+        className="relative h-screen flex py-[170px] transition-all duration-700"
+        style={{
+          backgroundImage: `url(${cards[activeIndex].image})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
       >
         {/* Overlay */}
         <div className="absolute inset-0 bg-black bg-opacity-40 transition-all duration-700"></div>
@@ -168,7 +174,7 @@ const AboutUs = () => {
       </section>
 
       <section
-        className="container w-full h-[464px] flex flex-col items-center justify-center relative px-10"
+        className="container mx-auto w-full h-[464px] flex flex-col items-center justify-center relative px-10"
         style={{
           backgroundImage: `url(${illusionbg})`,
           backgroundSize: "cover",
@@ -189,70 +195,10 @@ const AboutUs = () => {
           </p>
         </div>
       </section>
-      <section className="w-full h-[650px]">
+      <section className="container mx-auto w-full h-[650px]">
         <h1 className="mont font-bold text-[48px] text-center mt-10">
           Onlayn kino
         </h1>
-        {/* 
-        <div className="flex gap-10">
-          <div className="flex-col gap-5">
-            <img src={museyimg} alt="" className="w-[250px] h-[200px]" />
-            <article>
-              <p className="mont font-bold text-[20px]">— Teatr </p>
-              <span className="mont text-[16px]">7 oy avval</span>
-            </article>
-          </div>
-          <div className="flex-col gap-5">
-            <img src={museyimg} alt="" className="w-[250px] h-[200px]" />
-            <article>
-              <p className="mont font-bold text-[20px]">— Teatr </p>
-              <span className="mont text-[16px]">7 oy avval</span>
-            </article>
-          </div>{" "}
-          <div className="flex-col gap-5">
-            <img src={museyimg} alt="" className="w-[250px] h-[200px]" />
-            <article>
-              <p className="mont font-bold text-[20px]">— Teatr </p>
-              <span className="mont text-[16px]">7 oy avval</span>
-            </article>
-          </div>{" "}
-          <div className="flex-col gap-5">
-            <img src={museyimg} alt="" className="w-[250px] h-[200px]" />
-            <article>
-              <p className="mont font-bold text-[20px]">— Teatr </p>
-              <span className="mont text-[16px]">7 oy avval</span>
-            </article>
-          </div>{" "}
-          <div className="flex-col gap-5">
-            <img src={museyimg} alt="" className="w-[250px] h-[200px]" />
-            <article>
-              <p className="mont font-bold text-[20px]">— Teatr </p>
-              <span className="mont text-[16px]">7 oy avval</span>
-            </article>
-          </div>{" "}
-          <div className="flex-col gap-5">
-            <img src={museyimg} alt="" className="w-[250px] h-[200px]" />
-            <article>
-              <p className="mont font-bold text-[20px]">— Teatr </p>
-              <span className="mont text-[16px]">7 oy avval</span>
-            </article>
-          </div>{" "}
-          <div className="flex-col gap-5">
-            <img src={museyimg} alt="" className="w-[250px] h-[200px]" />
-            <article>
-              <p className="mont font-bold text-[20px]">— Teatr </p>
-              <span className="mont text-[16px]">7 oy avval</span>
-            </article>
-          </div>{" "}
-          <div className="flex-col gap-5">
-            <img src={museyimg} alt="" className="w-[250px] h-[200px]" />
-            <article>
-              <p className="mont font-bold text-[20px]">— Teatr </p>
-              <span className="mont text-[16px]">7 oy avval</span>
-            </article>
-          </div>
-        </div> */}
-
         <InfiniteSlider />
         <AnimatedButton />
       </section>
